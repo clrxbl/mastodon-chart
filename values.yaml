@@ -27,6 +27,7 @@ mastodon:
       enabled: true
       # @ignored
       schedule: "0 0 * * 0"
+  preparedStatements: true
   # -- available locales: https://github.com/mastodon/mastodon/blob/main/config/application.rb#L71
   locale: en
   local_domain: mastodon.local

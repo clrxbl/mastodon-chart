@@ -321,3 +321,7 @@ data:
   {{- with .Values.mastodon.metrics.statsd.address }}
   STATSD_ADDR: {{ . }}
   {{- end }}
+  BIND: "0.0.0.0"
+  {{- with .Values.mastodon.preparedStatements }}
+  PREPARED_STATEMENTS: {{ . | quote }}
+  {{- end }}
