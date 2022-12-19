@@ -58,6 +58,8 @@ spec:
                   key: redis-password
             - name: "PORT"
               value: {{ .Values.mastodon.streaming.port | quote }}
+            - name: "NODE_TLS_REJECT_UNAUTHORIZED"
+              value: {{ .Values.mastodon.streaming.rejectUnauthorizedTls | quote }}
           ports:
             - name: streaming
               containerPort: {{ .Values.mastodon.streaming.port }}
