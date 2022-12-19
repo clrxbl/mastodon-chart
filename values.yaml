@@ -158,7 +158,7 @@ mastodon:
     replicas: 1
     # -- Reject unauthorized TLS certificates
     # Realistically you wouldn't ever want to touch this.
-    rejectUnauthorizedTLS: 1
+    rejectUnauthorizedTls: 1
     # -- Affinity for Streaming Pods, overwrites .Values.affinity
     affinity: {}
     # -- Pod Security Context for Streaming Pods, overwrites .Values.podSecurityContext
